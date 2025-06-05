@@ -12,7 +12,7 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background: url('decoration.jpg') no-repeat;
+    background: url('background.jpg') no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -252,4 +252,46 @@ header {
 
 .login-register p a:hover {
     text-decoration: underline;
+}
+
+.forgot-password-popup {
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+.forgot-password-box {
+  background: #fff;
+  padding: 30px;
+  width: 400px;
+  border-radius: 8px;
+  position: relative;
+}
+
+.forgot-password-box h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.forgot-password-box .input-box {
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.icon-close-forgot {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }
